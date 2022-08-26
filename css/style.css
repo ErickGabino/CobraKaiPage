@@ -1,0 +1,292 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: ;
+	text-decoration: none;
+}
+
+@font-face{
+	font-family: Dead;
+	src:  url('../font/Dead.ttf');
+}
+
+.contenedor{
+	width: 100%;
+	height: auto;
+	background-color: #191919;
+	margin: auto;
+}
+
+.logo{
+	float: left;
+	padding: 5px;
+}
+
+.logo a img{
+	height: 90px;
+}
+
+.logo a img:hover{
+ 	transform: scale(1.1);
+}
+
+.barraNav{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+	list-style: none;
+	padding: 0 10px;
+}
+
+header, nav{
+	height: 100%;
+}
+
+.barraNav li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+
+.barraNav li:hover{
+	transform: scale(1.1);
+	background-color: #000;
+}
+
+.barraNav li a{
+	color: #BEB527;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Dead";
+	font-size: 18px;
+	padding: 12px 20px;
+	border-radius: 3px;
+}
+
+a.active, a:hover{
+	transition: .5s;
+}
+
+/*IMAGEN DE COVER E INFORMACION*/
+
+.contenedorPortada{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+	min-height: 650px;
+	background-image: url("../images/Banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	background-position: center;*/
+}
+
+#informacion{
+	width: 40%;
+	min-height: 650px;
+	margin: 10px;
+	background-color: #000;
+	opacity: 60%;
+}
+
+.titulo{
+	font-family: "Dead";
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+	margin: 20px 10px;
+	padding: 20px;
+}
+
+.sintaxis{
+	font-family: "open-sans";
+	font-size: 16px;
+	text-align: justify;
+	font-weight: bold;
+	padding: 30px;
+	color: #fff;
+}
+
+/*PERSONAJES*/
+
+.personajes{
+	padding: 40px;
+	display: inline-block;
+	width: 100%;
+	min-height: auto;
+	font-family: "Dead";
+	font-size: 50px;
+	text-align: center;
+	color: #BEB527;
+	background-color: ##161414;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	justify-content: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.flex-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cards{
+	background-color: #000;
+	color: #fff;
+	width: 300px;
+	margin: 10px;
+	padding: 10px 20px;
+	font-size: 29px;
+	font-family: "Dead";
+	box-shadow: 1px 1px 2px black, 0 0 5px lightyellow, 0 0 5px yellow;
+	overflow: hidden;
+}
+
+.cards img{
+	width: 100%;
+/*	height: 180px;*/
+}
+
+.infoCard p{
+	text-align: justify;
+	font-family: "open-sans", "Roboto";
+	font-size: 15px;
+}
+
+.contenedorDojos{
+	width: 100%;
+	min-height: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #000;
+}
+
+.contenedorDojos .CK, .MD, .CA{
+	position: relative;
+	width: 30%;
+	margin: 20px;
+	padding: 30px;
+}
+
+.contenedorDojos h2{
+	padding-top: 60px;
+	display: inline-block;
+	width: 100%;
+	min-height: auto;
+	font-family: "Dead";
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #BEB527;
+	background-color: #000;
+}
+
+.contenedorDojos div img{
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.overlay1, .overlay2, .overlay3{
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #090909;
+
+}
+
+.CK:hover .overlay1{
+	opacity: 0.9;
+}
+.MD:hover .overlay2{
+	opacity: 0.9;
+}
+.CA:hover .overlay3{
+	opacity: 0.9;
+}
+
+.textoCK, .textoMD, .textoCA{
+	color: #fff;
+	font-family: "Roboto";
+	font-size: 22px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+
+.contenedorTemporadas{
+	width: 100%;
+	background-color: #F1EBEB;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.contenedorTemporadas h2{
+	font-size: 60px;
+	font-family: "Dead";
+	color: #BEB527;
+	margin-bottom: 40px;
+}
+
+.txtTemporada{
+	font-size: 28px;
+	font-family: "Dead";
+	padding: 10px;
+}
+
+@media screen and (max-width: 778px){
+	body{
+		background-color: #000;
+	}
+	.barraNav li a{	
+		padding: 10px;
+		font-size: 10px;
+	}
+
+	.logo a img{
+		height: 50px;
+	}
+
+	.contenedor{
+		height: 60px;
+	}
+	.contenedorPortada{
+		background-position: center;
+	}
+	.titulo{
+		font-size: 30px;
+		text-align: justify;
+	}
+	.sintaxis{
+		font-size: 10px;
+	}
+	.textoCK, .textoMD, .textoCA{
+		font-size: 10px;
+	}
+	.contenedorTemporadas div iframe{
+		width: 300px;
+		height: auto;
+	}
+}
