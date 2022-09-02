@@ -6,6 +6,10 @@
 	text-decoration: none;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 @font-face{
 	font-family: Dead;
 	src:  url('../font/Dead.ttf');
@@ -85,6 +89,13 @@ a.active, a:hover{
 /*	background-position: center;*/
 }
 
+#informacion:hover{
+	opacity: 80%;
+	width: 98%;
+	opacity: 80%;
+	transition: 0.5s;
+}
+
 #informacion{
 	width: 40%;
 	min-height: 650px;
@@ -104,8 +115,8 @@ a.active, a:hover{
 }
 
 .sintaxis{
-	font-family: "open-sans";
-	font-size: 16px;
+	font-family: "Roboto";
+	font-size: 1.4em;
 	text-align: justify;
 	font-weight: bold;
 	padding: 30px;
@@ -123,7 +134,7 @@ a.active, a:hover{
 	font-size: 50px;
 	text-align: center;
 	color: #BEB527;
-	background-color: ##161414;
+	background-color: #161414;
 }
 
 .flex-container{
@@ -271,7 +282,6 @@ a.active, a:hover{
 	font-size: 50px;
 	font-family: "Dead";
 	color: #BEB527;
-	text-transform: uppercase;
 }
 
 .peliculas{
@@ -307,6 +317,89 @@ a.active, a:hover{
 .peliculas img{
 	width: 100%;
 	max-height: 450px;
+}
+
+.contenedorRopa{
+	width: 100%;
+	height: auto;
+	padding: 50px auto;
+	background-color: #fff;
+}
+
+.tituloRopa{
+	width: 100%;
+	height: auto;
+	font-size: 50px;
+	font-family: "Dead";
+	text-align: center;
+	color: #BEB527;
+	margin-top: 50px;
+	padding-top: 60px;
+}
+.ropa{
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ropa a{
+	margin: 20px 10px;
+	width: 250px;
+	max-height: auto;
+	font-size: 17px;
+	font-family: "Dead";
+	color: #BD0808;
+	text-align: center;
+}
+
+.ropa a:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+.ropa a img{
+	width: 100%;
+	max-height: 230px;
+}
+
+footer{
+	width: 100%;
+	min-height: 300px;
+	background-color: #080808;
+	display: grid;
+	/*column-gap: 50px;*/
+	grid-template-columns: auto auto;
+}
+
+footer div{
+	padding: 30px 25px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Roboto";
+
+}
+
+footer div i{
+	margin: 30px;
+}
+
+li{
+	text-decoration: none;
+	list-style: none;
+}
+
+.copyright{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+footer div ul li a:visited{
+	color: #fff;
+}
+footer div ul li a:link{
+	color: #fff;
 }
 
 @media screen and (max-width: 778px){
