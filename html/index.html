@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CobraKai</title>
-
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -14,11 +13,11 @@
 			<nav>
 				<li class="logo"><a href="#"><img src="../images/icons/logo.png"></a></li>
 				<ul class="barraNav">
-						<li class="active"><a href="#">Personajes</a></li>
-						<li><a href="#">Dojos</a></li>
-						<li><a href="#">Temporadas</a></li>
-						<li><a href="#">Peliculas</a></li>
-						<li><a href="#">Ropa</a></li>
+						<li class="active"><a href="#cPersonajes">Personajes</a></li>
+						<li><a href="#cDojos">Dojos</a></li>
+						<li><a href="#cTemporadas">Temporadas</a></li>
+						<li><a href="#cPeliculas">Peliculas</a></li>
+						<li><a href="#cRopa">Ropa</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -29,12 +28,12 @@
 				<h1 class="titulo">Cobra kai</h1>
 				<p class="sintaxis">2018 | TV-14 | 4 temporadas | Series de acción y aventura</p>
 				<p class="sintaxis">Décadas después del torneo que les cambió la vida, se reaviva la rivalidad entre Johnny y Daniel. Esta secuela continúa la historia de las películas de Karate Kid.</p>
-				<p class="sintaxis">Protagonistas:Ralph Macchio,William Zabka,Xolo Maridueña
-				Creado por:Josh Heald,Jon Hurwitz,Hayden Schlossberg</p>
+				<p class="sintaxis">Protagonistas: Ralph Macchio, William Zabka, Xolo Maridueña
+				Creado por: Josh Heald, Jon Hurwitz, Hayden Schlossberg</p>
 			</section>
 		</div>
-
-		<div class="personajes">
+		<!-- ----------------------------------Personajes------------------------------- -->
+		<div class="personajes" id="cPersonajes">
 			<h2>Personajes</h2>
 			<div class="flex-container">
 				<div class="cards">
@@ -65,7 +64,6 @@
 						<p>Sensei de Cobra Kai</p>
 					</div>
 				</div>
-<!-- ----------------------------------------------------------------------------------- -->
 
 				<div class="cards">
 					<img src="../images/miguel.jpg">
@@ -96,8 +94,6 @@
 					</div>
 				</div>
 
-<!-- ---------------------------------------------------------------- -->
-
 				<div class="cards">
 					<img src="../images/halcon.jpg">
 					<div class="infoCard">
@@ -118,7 +114,7 @@
 
 		<!-- --------------------DOJOS------------------- -->
 
-		<div class="contenedorDojos">
+		<div class="contenedorDojos" id="cDojos">
 			<h2>Dojos</h2>
 			<div class="CK">
 				<img src="../images/logoCK.png" alt="Dojo CobraKai">
@@ -139,7 +135,7 @@
 		</div>
 
 		<!-- ------------------------------Temporada------------------------------ -->
-		<div class="contenedorTemporadas">
+		<div class="contenedorTemporadas" id="cTemporadas">
 			<h2>Temporadas</h2>
 			<div class="T1">
 				<h4 class="txtTemporada">Temporada 1</h4>
@@ -164,7 +160,7 @@
 		</div>
 
 		<!-- -----------------------------Peliculas---------------------------- -->
-		<div class="contenedorPeliculas">
+		<div class="contenedorPeliculas" id="cPeliculas">
 			<div class="ctituloPeliculas">
 				<h2>Peliculas</h2>
 			</div>
@@ -175,8 +171,63 @@
 				<div class="kk3"><img src="../images/KK3.jpg"><h3>Karate Kid lll</h3></div>	
 			</div>
 		</div>
+
+		<!-- -----------------------------------Ropa-------------------------------------------------- -->
+		<div class="contenedorRopa" id="cRopa">
+			<div class="tituloRopa">
+				<h2>Ropa</h2>
+			</div>
+			<div class="ropa">
+				<a href="#"><img src="../images/camiseta.png"><span>Camiseta de Cobra Kai</span></a>
+				<a href="#"><img src="../images/camiseta2.png"><span>Camiseta de Cobra Kai</span></a>
+				<a href="#"><img src="../images/chaqueta.png"><span>Chaqueta de Cobra Kai</span></a>
+				<a href="#"><img src="../images/completo.png"><span>Completo de Cobra Kai</span></a>
+
+				<a href="#"><img src="../images/cubrebocas.png"><span>Cubrebocas de Cobra Kai</span></a>
+				<a href="#"><img src="../images/playera.png"><span>Playera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/playera2.png"><span>Playera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/playera3.png"><span>Playera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/playera4.png"><span>Playera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/playera5.png"><span>Playera de Cobra Kai</span></a>
+
+				<a href="#"><img src="../images/sudadera.png"><span>Sudadera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/sudadera2.png"><span>Sudadera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/sudadera3.png"><span>Sudadera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/sudadera4.png"><span>Sudadera de Cobra Kai</span></a>
+				<a href="#"><img src="../images/sueter.png"><span>Sueter de Cobra Kai</span></a>
+			</div>
+		</div>
+
+		<!-- -------------------------Footer------------------------------------- -->
+		<footer>
+			<div class="redesCK">
+				<h3>Redes Sociales</h3>
+				<hr>
+				<ul>
+					<li><a href="https://www.facebook.com/CobraKaiSeries/"><i class="fa-brands fa-facebook fa-2xl"></i><span>CobraKaiSeries</span></a></li>
+					<li><a href="https://www.instagram.com/cobrakaiseries/"><i class="fa-brands fa-instagram fa-2xl"></i><span>Cobrakaiseries</span></a></li>
+					<li><a href="https://twitter.com/cobrakaiseries"><i class="fa-brands fa-twitter fa-2xl"></i><span>Cobrakaiseries</span></a></li>
+					<li><a href="https://www.youtube.com/channel/UCe9DTWmhhxeKyYHL4mldGcA"><i class="fa-brands fa-youtube fa-2xl"></i></i><span>Cobrakai</span></a></li>
+					<li><a href="https://www.netflix.com/es/title/81002370"><i class="fa-sharp fa-solid fa-n fa-2xl"></i></i><span>CobraKai</span></a></li>
+				</ul>
+				
+			</div>
+
+			<div class="redesCreador">
+				<h3>Contáctame</h3>
+				<hr>
+				<ul>
+					<li><a href="https://www.facebook.com/erickgabino.velazquezavila"><i class="fa-solid fa-envelope fa-2xl"></i><span>evelazqueztprog@gmail.com</span></a></li>
+					<li><a href="https://www.instagram.com/erickgabino1/"><i class="fa-brands fa-instagram fa-2xl"></i><span>erickgabino1</span></a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<h4>Creado por Erick Gabino con el único próposito de practicar y aplicar sus conocimientos en desarrollo web, asi como de entretenimiento.</h4>
+			</div>
+		</footer>
 	</div>
 	
 
 </body>
+<script src="https://kit.fontawesome.com/f61a6fd05f.js" crossorigin="anonymous"></script>
 </html>
